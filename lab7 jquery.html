@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lab 7 Intro to Jquery</title>
+<style>
+
+	.good{
+		color:green;
+	}
+	section{position:relative; top:-200px;}
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+        <section>
+        <h3>Section 1 Lab 7</h3>
+        
+	<p>As a member of the academic community, students are expected to recognize and uphold standards of intellectual and academic integrity.  Under all circumstances, students are expected to be honest in their dealings with faculty, administrative staff, and fellow students. In speaking with any member of the college community, students must give an accurate representation of the facts at hand. Students are required to refrain from any and all forms of dishonorable or unethical conduct related to academic work. In class assignments, students must submit work that fairly and accurately reflects their level of accomplishment. Any work that is not the product of the student’s own efforts is considered dishonest. Engaging in academic dishonesty can have serious consequences for the students. Academic dishonesty includes, but is not limited to, the following:
+    </p>
+    
+    <p>As a member of the academic community, students are expected to recognize and uphold standards of intellectual and academic integrity.  Under all circumstances, students are expected to be honest in their dealings with faculty, administrative staff, and fellow students. In speaking with any member of the college community, students must give an accurate representation of the facts at hand. Students are required to refrain from any and all forms of dishonorable or unethical conduct related to academic work. In class assignments, students must submit work that fairly and accurately reflects their level of accomplishment. Any work that is not the product of the student’s own efforts is considered dishonest. Engaging in academic dishonesty can have serious consequences for the students. Academic dishonesty includes, but is not limited to, the following:
+    </p>
+    
+    <p>As a member of the academic community, students are expected to recognize and uphold standards of intellectual and academic integrity.  Under all circumstances, students are expected to be honest in their dealings with faculty, administrative staff, and fellow students. In speaking with any member of the college community, students must give an accurate representation of the facts at hand. Students are required to refrain from any and all forms of dishonorable or unethical conduct related to academic work. In class assignments, students must submit work that fairly and accurately reflects their level of accomplishment. Any work that is not the product of the student’s own efforts is considered dishonest. Engaging in academic dishonesty can have serious consequences for the students. Academic dishonesty includes, but is not limited to, the following:
+    </p>
+    
+    <p>As a member of the academic community, students are expected to recognize and uphold standards of intellectual and academic integrity.  Under all circumstances, students are expected to be honest in their dealings with faculty, administrative staff, and fellow students. In speaking with any member of the college community, students must give an accurate representation of the facts at hand. Students are required to refrain from any and all forms of dishonorable or unethical conduct related to academic work. In class assignments, students must submit work that fairly and accurately reflects their level of accomplishment. Any work that is not the product of the student’s own efforts is considered dishonest. Engaging in academic dishonesty can have serious consequences for the students. Academic dishonesty includes, but is not limited to, the following:
+    </p>
+    
+    <p>As a member of the academic community, students are expected to recognize and uphold standards of intellectual and academic integrity.  Under all circumstances, students are expected to be honest in their dealings with faculty, administrative staff, and fellow students. In speaking with any member of the college community, students must give an accurate representation of the facts at hand. Students are required to refrain from any and all forms of dishonorable or unethical conduct related to academic work. In class assignments, students must submit work that fairly and accurately reflects their level of accomplishment. Any work that is not the product of the student’s own efforts is considered dishonest. Engaging in academic dishonesty can have serious consequences for the students. Academic dishonesty includes, but is not limited to, the following:
+    </p>
+    
+    </section>
+</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="jquery.transit.min.js"></script>
+    
+    <script>
+		$(document).ready(function() {
+			//$('section p:first').text('welcome! hover to veiw details'!);
+			
+            $('section p:first').css('color', 'red'); //same as using attributes styling 
+			$('section p:last').addClass('good');
+			
+			$('this').hover( function(){
+					$('section').transition({y:'100px'});
+				}, function(){
+					$('section').transition({y:'0px'});
+					$('section').clearQueue();
+				} )
+			
+			
+				
+			
+        });
+	</script>
+</body>
+</html>
